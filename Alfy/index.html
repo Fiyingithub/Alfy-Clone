@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfy-Clone</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav class="flex fixed w-[100%] mt-[-2] h-[70px] md:h-[60px] lg:h-[80px] shadow justify-between pt-2 px-4 md:px-10 lg:px-48 lg:py-6" style="background-image: url(./images/header-background.png);" >
+            <img class="w-20 h-10 md:w-32 md:h-10" src="/images/logo.svg" alt="logo">
+            <img class="w-8 h-8 ml-32 cursor-pointer md:hidden" onclick="menuBtn()" src="/images/menu.png" alt="menu" id="a">
+            
+            <div class="flex">
+               
+                <ul class="hidden w-[200px] h-[230px] shadow-2xl bg-white text-center font-[500] text-xl" id="c">
+                    <img class="w-8 h-8 ml-4 mt-4 hidden cursor-pointer" onclick="cancelBtn()" src="/images/cancel.png" alt="cancel" id="b">
+
+                    <li><a href="Home">Home</a></li>
+                    <li class="mt-2"><a href="#">Features</a></li>
+                    <li class="mt-2"><a href="Details">Details</a></li>
+                    <li class="mt-2"><a href="#">Video</a></li>
+                    <li class="flex ml-[73px] mt-4">
+                        <a class="mt-[-10px]" href="#">Drop</a>
+                        <ion-icon name="caret-down-outline"></ion-icon>
+                    </li>
+                </ul>
+
+                <ul class="hidden lg:block md:block md:flex lg:gap-4 md:gap-2 md:ml-[50px] lg:ml-[500px] text-xl font-[500] lg:flex" >
+                    <li class="text-blue-400"><a href="#">Home</a></li>
+                    <li class="hover:w-[80px] hover:text-center hover:rounded-md hover:h-[35px] hover:bg-blue-200"><a href="#">Features</a></li>
+                    <li class="hover:w-[80px] hover:text-center hover:rounded-md hover:h-[35px] hover:bg-blue-200"><a href="#">Details</a></li>
+                    <li class="hover:w-[80px] hover:text-center hover:rounded-md hover:h-[35px] hover:bg-blue-200"><a href="#">Video</a></li>
+                    <li class="hover:w-[80px] hover:text-center hover:rounded-md hover:h-[35px] hover:bg-blue-200"><a href="#">Drop</a><ion-icon name="caret-down-outline"></ion-icon></li>
+                    
+                </ul>
+            </div>
+            <button class="w-[100px] h-[35px] hover:opacity-3 font-[500] bg-blue-400 text-white rounded-md">Free trial</button>
+        </nav>
+    </header><br><br><br><br>
+
+    <!-- --------Home---------- -->
+
+
+    <div class="Home md:flex px-6 md:px-12 lg:px-48 justify-center md:h-[500px] mt-[-30px] pt-8 md:mt-[-35px] lg:h-[700px] md:pt-[40px] lg:pt-20" style="background-image: url(./images/header-background.png);">
+        <div class="mt-10">
+            <h1 class="text-4xl md:text-2xl lg:text-5xl font-[700]">Lorem ipsum, dolor <br class="hidden lg:block"> sit amet consecte <br>tur adipisicing</h1>
+            <p class="text-xl lg:mt-4 lg:font-[400] font-[400]">Lorem ipsum dolor, sit amet consec <br> tetur adipisicing elit. Fugiat dolorum </p><br>
+            <input class="w-[300px] h-[45px] lg:w-[350px] lg:h-[50px] bg-white border-2 pl-4" type="email" name="" placeholder="Email address" id="">
+            <button class="w-[140px] mb-4 h-[45px] lg:h-[50px] md:w-[135px] text-center px-4 py-2 mt-6 font-[500] bg-yellow-400 rounded-md">Start free trial</button>
+        </div>
+
+        <img class="w-[400px] h-[400px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:ml-[100px] lg:h-[450px] " src="/images/header-bulb-table.png" alt="header">
+    </div>
+
+
+    <!-- ---------Details---------- -->
+
+    <div class="Details md:flex md:mt-20 md:gap-4 lg:pt-24 lg:h-[500px] px-6 md:px-12 lg:px-48 justify-center md:h-[400px] mt-[-30px] pt-8 md:mt-[-35px] lg:h-[400px] md:pt-[40px] lg:pt-20">
+        <div class="text-center border-2 pt-4 lg:pt-8 lg:px-6 shadow-xl h-48 md:h-[230px] mt-10">
+            <img class="w-12 h-12 lg:ml-[140px] lg:mb-2 lg:w-16 lg:h-16 bg-blue-500 md:ml-20 text-white p-2" src="/images/space-rocket-launch.png" alt="">
+            <h4 class="font-[700]">Porta Non Pulvinar</h4>
+            <p class="font-[400]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati omnis quia vitae libero.</p>
+        </div>
+        <div class="text-center border-2 pt-4 lg:pt-8 lg:px-6  md:h-[230px] shadow-xl h-48 mt-10">
+            <img class="w-12 h-12 lg:ml-[140px] lg:mb-2 lg:w-16 lg:h-16 bg-blue-500 md:ml-20 text-white p-2" src="/images/clock.png" alt="">
+            <h4 class="font-[700]">Vel Orci Portal Non</h4>
+            <p class="font-[400]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati omnis quia vitae libero.</p>
+        </div>
+        <div class="text-center border-2 pt-4 lg:pt-8 lg:px-6 md:h-[230px] shadow-xl h-48 mt-10">
+            <img class="w-12 h-12 lg:ml-[140px] lg:mb-2 lg:w-16 lg:h-16 bg-blue-500 md:ml-20 text-white p-2" src="/images/bubble-chat.png" alt="">
+            <h4 class="font-[700]">Udin Nibh Sit Amet </h4>
+            <p class="font-[400]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati omnis quia vitae libero.</p>
+        </div>
+    </div>
+
+
+    <!-- ----------Drops--------- -->
+
+    
+    <div class="text-center mt-20 md:h-[200px] lg:mt-10 px-6 md:px-12 lg:px-48 justify-center md:h-[500px] mt-[-30px] pt-8 md:mt-[-15px] lg:h-[300px]">
+        <h1 class="text-5xl font-[700] text-blue-600">2500 <b class="text-5xl">+</b></h1><br>
+        <p class="md:font-[500]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatum excepturi distinctio velit.</p><br>
+        
+        <div class="lg:hidden ml-[100px] md:ml-8 md:mt-8 md:h-[400px]">
+            <div class="lg:hidden md:flex md:gap-24">
+                <img class="mt-4" src="/images/customer-logo-6.png" alt="customer-logo-6">
+                <img class="mt-4" src="/images/customer-logo-1.png" alt="customer-logo-1">
+                <img class="mt-4" src="/images/customer-logo-2.png" alt="customer-logo-2">
+            </div>
+            <div class="lg:hidden md:flex md:gap-[70px]">
+                <img class="mt-4" src="/images/customer-logo-3.png" alt="customer-logo-3">
+                <img class="mt-4" src="/images/customer-logo-4.png" alt="customer-logo-4">
+            </div>
+
+        </div>
+
+        <div class="hidden lg:block lg:flex lg:gap-[100px] lg:my-10">
+            <img class="mt-4" src="/images/customer-logo-6.png" alt="customer-logo-6">
+            <img class="mt-4" src="/images/customer-logo-1.png" alt="customer-logo-1">
+            <img class="mt-4" src="/images/customer-logo-2.png" alt="customer-logo-2">
+            <img class="mt-4" src="/images/customer-logo-3.png" alt="customer-logo-3">
+            <img class="mt-4" src="/images/customer-logo-4.png" alt="customer-logo-4">
+        </div>
+    </div>
+
+    <!-- ----------Featusres--------- -->
+
+    <div class="h-[730px] md:h-[850px] lg:h-[1200px] max-w-[100%]  bg-gray-100 px-6 md:px-12 lg:px-48 justify-center pt-16 mt-[50px] md:mt-[-20px] ">
+        <h1 class="md:text-4xl text-3xl text-center lg:pt-32 md:pb-8 font-[500]">Tellus cras adipisicing enim eu</h1>
+        <img class=" lg:h-auto lg:w-auto h-[250px] md:h-[450px] md:w-[700px] w-[400px] " src="./images/features.jpg" alt="">
+
+        <div class="md:flex md:ml-6 mt-10 md:mt-16 lg:mt-24 lg:ml-[110px] ">
+            <div class="flex gap-12 lg:gap-32 ">
+                <div class="">
+                   <img class="w-8 h-8 rounded-[30px] lg:ml-[10px] ml-4  bg-blue-400 md:w-16 md:h-[63px] md:ml-[10px] text-white p-2" src="/images/space-rocket-launch.png" alt="">
+                    <p class="font-[700] text-center">Lorem <br> Umrolosits</p>
+                </div>
+                <div class="">
+                    <img class="w-8 h-8 md:w-16 md:h-[63px] md:ml-[10px] rounded-[30px] ml-4  bg-green-500 text-white p-2" src="/images/cog-wheel.png" alt="">
+                    <p class="font-[700] text-center">Lorem <br> Umrolosits</p>
+                </div>
+                <div class="">
+                    <img class="w-8 h-8 md:w-16 md:h-[63px] md:ml-[10px] rounded-[30px] ml-4  bg-yellow-400 text-white p-2" src="/images/send (1).png" alt="">
+                    <p class="font-[700] text-center">Lorem <br> Umrolosits</p>
+                </div>
+            </div>
+            <div class="flex gap-12 mt-10 md:mt-0 md:ml-12 lg:ml-32 lg:gap-32 ">
+                <div class="">
+                   <img class="w-8 h-8 md:w-16 md:h-[63px] md:ml-[10px] rounded-[30px] ml-4 bg-pink-500 text-white p-2" src="/images/bubble-chat.png" alt="">
+                    <p class="font-[700] text-center">Lorem <br> Umrolosits</p>
+                </div>
+                <div class="">
+                    <img class="w-8 h-8 m md:w-16 md:h-[63px] md:ml-[10px] rounded-[30px] ml-4 bg-blue-400 text-white p-2" src="/images/color-palette.png" alt="">
+                    <p class="font-[700] text-center">Lorem <br> Umrolosits</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------Videos--------- -->
+
+    <div class="px-6 md:px-12 lg:px-48 justify-center pt-12 mt-[50px] md:mt-[-20px] ">
+        <div class="md:flex md:mt-12">
+           <div class="lg:mt-20">
+               <h1 class="text-3xl lg:text-4xl font-[500] ">Senetus et netus et male <br class="block md:hidden lg:block"> su adaa fames bac turpls </h1><br>
+               <p class="font-[500]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero  illo autem <br class="hidden lg:block"> nisi eum numquam nesciunt provident rerum totam possimus blanditiis.</p>
+
+               <div class="mt-4 flex text-blue-500 font-[700]"  >
+                   <a class="mb-1" href="#">Learn More</a>
+                   <ion-icon class="mt-[5px] ml-1" name="arrow-forward"></ion-icon>
+               </div>
+           </div>
+
+           <img class="mt-8 md:mt-0 md:w-[350px] lg:w-[540px] lg:ml-10 lg:h-[400px]" src="./images/details-1.png" alt="details-1">
+            
+        </div>
+    </div>
+
+    <div class="px-6 md:px-12 lg:px-48 justify-center pt-12 mt-[5px] md:mt-[-20px] ">
+        <div class="md:flex md:mt-12">
+            <img class="mt-8 md:mt-0 md:mr-8 md:w-[320px] lg:w-[540px] lg:ml-10 lg:h-[400px]" src="./images/details-2.png" alt="details-2">
+
+           <div class="lg:mt-20 lg:ml-10">
+               <h1 class="text-3xl lg:text-4xl font-[500] ">Eget velit aliquet sagittis id<br class="hidden lg:block"> Consec tetur accum san </h1><br>
+               <p class="font-[500]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laudantium expedita magnam<br class="hidden lg:block"> id doloribus ipsa quibusdam non facere totam veritatis commodi nostrum dignissimos, perspiciatis pariatur.</p>
+
+               <div class="mt-4 flex text-blue-500 font-[700]"  >
+                   <a class="mb-1" href="#">Learn More</a>
+                   <ion-icon class="mt-[5px] ml-1" name="arrow-forward"></ion-icon>
+               </div>
+           </div>
+            
+        </div>
+    </div>
+
+    <div class="px-6 md:px-12 lg:px-48 justify-center pt-12 mt-[50px] md:mt-[-20px] ">
+        <div class="md:flex md:mt-12">
+           <div class="lg:mt-20">
+               <h1 class="text-3xl lg:text-4xl font-[500] ">Accumsan tortor posuerea <br class="block md:hidden lg:block">Consequat semper viv </h1><br>
+               <p class="font-[500]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis dignissimos sapiente doloribus iusto voluptas, saepe nobis! Voluptatem eum<br class="hidden lg:block"> dolores illo quam neque ut enim reiciendis, atque soluta consequatur</p>
+
+               <div class="mt-4 flex text-blue-500 font-[700]"  >
+                   <a class="mb-1" href="#">Learn More</a>
+                   <ion-icon class="mt-[5px] ml-1" name="arrow-forward"></ion-icon>
+               </div>
+           </div>
+
+           <img class="mt-8 md:mt-0 md:w-[350px] lg:w-[540px] lg:ml-10 lg:h-[400px]" src="./images/details-3.png" alt="details-3">
+            
+        </div>
+    </div>
+
+    <div class="px-6 md:px-12 bg-gray-100 lg:px-48 justify-center py-16 mt-[50px] md:mt-[24px] ">
+        <div class="md:flex md:mt-12">
+           <div class="lg:mt-20">
+               <h1 class="text-3xl lg:text-4xl font-[500] ">Tellus elementum sagitis<br class="block md:hidden lg:block"> vitae et leo duiso revis</h1><br>
+               <p class="font-[500]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis dignissimos sapiente doloribus iusto voluptas, saepe nobis! Voluptatem eum<br class="hidden lg:block"> dolores illo quam neque ut enim reiciendis, atque soluta consequatur</p>
+
+               <div class="mt-4 flex font-[700]"  >
+                   <a class="mb-1" href="#">Learn More</a>
+                   <ion-icon class="mt-[5px] ml-1" name="arrow-forward"></ion-icon>
+               </div>
+           </div>
+
+           <img class="mt-8 md:mt-0 md:w-[350px] lg:w-[540px] lg:ml-10 lg:h-[400px]" src="./images/video-preview.jpg" alt="video-preview">
+            
+        </div>
+    </div>
+
+
+    <!-- ----------Testimonials--------- -->
+
+    <div class="px-6 md:px-12 md:pt-20 bg-gray-100 lg:px-48 justify-center py-20 mt-[-30px] md:mt-[-24px]">
+        <div class="md:flex lg:justify-center lg:gap-32">
+            <div class="">
+                <img class="w-8 h-8 md:ml-8 lg:ml-24" src="/images/quotes.svg" alt="quotes">
+
+                <div class="flex justify-center mt-4 ml-[-30px] ">
+                    <img class="w-16 h-16 lg:mr-16 lg:mt-4" src="/images/angle-left.svg" alt="">
+
+                    <div class="">
+                        <h1 class="lg:text-xl">
+                            Et netus et malesuada fames oc turpis duis <br class="hidden lg:block">Convaillis Convaillis tellus id interdum velits<br class="hidden lg:block">loor eet. At risus viverra adipisicing at in <br class="hidden lg:block">tellus integer at auctor urna ramon
+                        </h1>
+                        <div class="flex justify-center mt-4 lg:mt-6 text-center md:ml-[-50px]">
+                            <img class="rounded-[100px] w-20 h-20" src="/images/testimonial-1.jpg" alt="testimonial-1">
+                            <div class="mt-4 lg:ml-4">
+                                <h5 class="font-[700]">Lorem ipsum</h5>
+                                <p class="font-[400]">Job Title.Company</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="">
+                <img class="w-8 h-8 md:ml-8" src="/images/quotes.svg" alt="quotes">
+
+                <div class="flex justify-center mt-4 ml-8 mr-[-18px]">
+
+                    <div class="">
+                        <h1 class="lg:text-xl">
+                            Et netus et malesuada fames oc turpis duis <br class="hidden lg:block">Convaillis Convaillis tellus id interdum velits<br class="hidden lg:block">loor eet. At risus viverra adipisicing at in <br class="hidden lg:block">tellus integer at auctor urna ramon
+                        </h1>
+                        <div class="flex justify-center mt-4 ml-12 md:ml-0 text-center">
+                            <img class="rounded-[100px] lg:mt-4 w-20 h-20" src="/images/testimonial-2.jpg" alt="testimonial-2">
+                            <div class="mt-4 lg:ml-4 lg:mt-6">
+                                <h5 class="font-[700]">Lorem ipsum</h5>
+                                <p class="font-[400]">Job Title.Company</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img class="w-16 h-16 lg:ml-16 lg:mt-4" src="/images/angle-right.svg" alt="">
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="text-center px-6 py-8 h-[300px] lg:h-[400px]">
+        <h1 class="text-xl font-[700] mb-4 lg:text-2xl lg:mt-10 ">Sed velit dignissim sodales ut eu</h1>
+        <p class="font-[400]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti <br class="hidden md:block"> totam tenetur voluptates impedit ducimus aut itaque.</p><br>
+
+        <form action="">
+            <input class="w-[300px] h-[45px] lg:w-[350px] lg:h-[50px] bg-white border-2 pl-4" type="email" name="" placeholder="Email address" id="">
+            <button class="w-[140px] mb-4 h-[45px] lg:h-[50px] md:w-[135px] text-center px-4 py-2 mt-6 font-[500] bg-yellow-400 rounded-md">Start free trial</button>
+        </form>
+    </div>
+
+
+
+    <script>
+
+        function menuBtn(){
+            const menu = document.getElementById("a").value;
+            const cancel = document.getElementById("b").value;
+            const info = document.getElementById("c").value;
+
+            document.getElementById("c").classList.remove("hidden");
+            document.getElementById("b").classList.remove("hidden");
+            document.getElementById("a").classList.add("hidden"); 
+
+        }
+
+        function cancelBtn(){
+            const menu = document.getElementById("a").value;
+            const cancel = document.getElementById("b").value;
+            const info = document.getElementById("c").value;
+
+            document.getElementById("c").classList.add("hidden");
+            document.getElementById("b").classList.add("hidden");
+            document.getElementById("a").classList.remove("hidden");
+            
+
+        }
+
+
+    </script>
+    
+</body>
+</html>
